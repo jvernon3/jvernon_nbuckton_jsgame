@@ -7,6 +7,7 @@
   <title>Starship Troopers Game</title>
   <link href="css/reset.css" rel="stylesheet" type="text/css">
   <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
 </head>
 <body>
 
@@ -14,14 +15,17 @@
 
     <section class="startScreen">
       <h1>Starship Troopers: Arachnid Assault</h1>
-        <button>Start Game</button>
-        <button>How To Play</button>
+        <button class="nextButton">START GAME</button>
+        <button class="howToPlay">HOW TO PLAY</button>
+        <div class="star-fast"></div>
+  		<div class="star-medium"></div>
+  		<div class="star-slow"></div>
     </section>
 
     <section class="htpScreen">
       <h1>How To Play:</h1>
       <p>*insert instructions here</p>
-        <button>Start Game</button>
+        <button class="nextButton">Start Game</button>
     </section>
 
 
@@ -29,7 +33,11 @@
     <section id="mainContainer">
       <section id="mainGame">
 
-        <section class="wordType">
+        <section class="activeWord">
+          <p class="currentWord">
+          </p>
+          <label class="press-label">Type a Letter:</label>
+          <input class="selectedLetter" maxlength="1" type="text" pattern=[a-zA-Z]>
         </section>
 
         <section class="infoPanel">
@@ -41,19 +49,19 @@
         <section class="firstLevelScreen">
           <h1>Level 1</h1>
           <p>*flavour text</p>
-            <button>Ready?</button>
+            <button class="nextButton">Ready?</button>
         </section>
 
         <section class="secondLevelScreen">
           <h1>Level 2</h1>
           <p>*flavour text</p>
-            <button>Ready?</button>
+            <button class="nextButton">Ready?</button>
         </section>
 
         <section class="thirdLevelScreen">
           <h1>Level 3</h1>
           <p>*flavour text</p>
-            <button>Ready?</button>
+            <button class="nextButton">Ready?</button>
         </section>
 
       </section>
@@ -74,6 +82,7 @@
 
 
 </main>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
