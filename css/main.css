@@ -1,0 +1,181 @@
+/*STARTING SCREEN*/
+
+.startScreen
+{
+  display: none;
+  width: 75%;
+  height: 525px;
+  margin: 0 auto;
+  position: relative;
+  background: #0a0a0a;
+  overflow: hidden;
+}
+
+.star-fast {
+  height: 1px;
+  width: 50vh;
+  background: #f4f5f4;
+  position: absolute;
+  top: 5%;
+  left:  100%;
+  -webkit-animation: shootstar-fast 0.8s linear infinite;
+}
+
+.star-fast::before {
+  content: "";
+  height: 1px;
+  width: 50vh;
+  background: #f4f5f4;
+  position: absolute;
+  top: 30vh;
+  right: -150vh;
+
+}
+
+.star-fast::after {
+  content: "";
+  height: 1px;
+  width: 50vh;
+  background: #f4f5f4;
+  position: absolute;
+  top: 80vh;
+  left: -20vh;
+
+}
+
+.star-medium {
+  height: 1px;
+  width: 50vh;
+  left: 100%;
+  position: absolute;
+  top: 10vh;
+  background: #f4f5f4;
+  -webkit-animation: shootstar-med 1s linear infinite
+}
+
+.star-medium::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 40vh;
+  height: 1px;
+  width: 30vh;
+  background: #f4f5f4;
+}
+
+.star-medium::after {
+  content: "";
+  position: absolute;
+  right: -150%;
+  top: 60vh;
+  height: 1px;
+  width: 30vh;
+  background: #f4f5f4;
+}
+
+.star-slow {
+  position: absolute;
+  top: 30vh;
+  left: 100%;
+  background: #f4f5f4;
+  height: 1px;
+  width: 10vh;
+  -webkit-animation: shootstar-slow 1.3s infinite linear;
+}
+
+.star-slow::before {
+  content: "";
+  position: absolute;
+  right: 20vh;
+  top: 10vh;
+  width: 10vh;
+  height: 1px;
+  background: #f4f5f4;
+}
+
+.star-slow::after {
+  content: "";
+  position: absolute;
+  right: -60vh;
+  top: 30vh;
+  width: 10vh;
+  height: 1px;
+  background: #f4f5f4;
+}
+
+@-webkit-keyframes shootstar-fast {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -150%;
+  }
+}
+
+@-webkit-keyframes shootstar-med {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -120%;
+  }
+}
+
+@-webkit-keyframes shootstar-slow {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -120%;
+  }
+}
+
+.startScreen button
+{
+	background-color: #000;
+	color: #fff;
+	font-size: 1.5em;
+	font-family: 'Coda', Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	letter-spacing: 8px;
+	border: none;
+	display: block;
+	margin-bottom: 20px;
+	margin: 0 auto;
+	margin-top: 40PX;
+}
+
+.htpScreen
+{
+  display: none;
+}
+
+.firstLevelScreen
+{
+  display: none;
+}
+
+.secondLevelScreen
+{
+  display: none;
+}
+
+.thirdLevelScreen
+{
+  display: none;
+}
+
+.losingScreen
+{
+  display: none;
+}
+
+.victoryScreen
+{
+  display: none;
+}
+
+.infoPanel
+{
+  display: none;
+}
