@@ -2,87 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Starship Troopers Game</title>
-  <link href="css/reset.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+  <title>Hangman Game</title>
 </head>
 <body>
-
   <main>
-
-    <section class="startScreen">
-      <h1>Starship Troopers: Arachnid Assault</h1>
-        <button class="nextButton">START GAME</button>
-        <button class="howToPlay">HOW TO PLAY</button>
-        <div class="star-fast"></div>
-  		<div class="star-medium"></div>
-  		<div class="star-slow"></div>
+    <section class="mainContainer">
+    <section class="hangman">
+      <h1 class="mainTitle">Hangman Game</h1>
+      <h2>Guess the Word to Win!</h2>
+      <svg id="hangman" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.8 500">
+        <defs>
+        </defs>
+        <title>Hangman</title>
+        <g id="hangmanComplete">
+        <g id="hangman_post">
+          <path d="M791.5,139.5v87c0,7.72,12,7.73,12,0v-87c0-7.72-12-7.73-12,0Z" transform="translate(-198.55 -133.5)"/>
+          <path d="M1044.67,133.5H797.5c-7.72,0-7.73,12,0,12h247.17c7.72,0,7.73-12,0-12Z" transform="translate(-198.55 -133.5)"/>
+          <path d="M1050.67,569V192.44c0-17.34.75-34.87,0-52.21,0-.24,0-.49,0-.73,0-7.72-12-7.73-12,0V516.06c0,17.34-.76,34.87,0,52.21,0,.24,0,.49,0,.73,0,7.72,12,7.73,12,0Z" transform="translate(-198.55 -133.5)"/>
+          <path d="M862.33,575h311.38c14.35,0,28.87.65,43.21,0h.63c7.72,0,7.73-12,0-12H906.16c-14.35,0-28.87-.65-43.21,0h-.62c-7.72,0-7.73,12,0,12Z" transform="translate(-198.55 -133.5)"/>
+        </g>
+        <g id="man">
+            <line class="cls-1 wrong5" x1="660.95" y1="376" x2="605.95" y2="316"/>
+            <line class="cls-1 wrong4" x1="545.95" y1="376" x2="600.95" y2="316"/>
+            <line class="cls-1 wrong3" x1="602.95" y1="241" x2="663.95" y2="286"/>
+            <line class="cls-1 wrong2" x1="602.95" y1="241" x2="547.95" y2="284"/>
+            <line class="cls-1 wrong1" x1="602.95" y1="203" x2="602.95" y2="313"/>
+            <circle class="cls-1 wrong0" cx="603.45" cy="148.5" r="55"/>
+        </g>
+      </g>
+      </svg>
     </section>
 
-    <section class="htpScreen">
-      <h1>How To Play:</h1>
-      <p>*insert instructions here</p>
-        <button class="nextButton">Start Game</button>
-    </section>
-
-
-
-    <section id="mainContainer">
-      <section id="mainGame">
-
-        <section class="activeWord">
-          <p class="currentWord">
-          </p>
-          <label class="press-label">Type a Letter:</label>
-          <input class="selectedLetter" maxlength="1" type="text" pattern=[a-zA-Z]>
-        </section>
-
-        <section class="infoPanel">
-          <h2>Information</h2>
-          <h3>Level:</h3>
-          <h3>Remaining Troopers:</h3>
-        </section>
-
-        <section class="firstLevelScreen">
-          <h1>Level 1</h1>
-          <p>*flavour text</p>
-            <button class="nextButton">Ready?</button>
-        </section>
-
-        <section class="secondLevelScreen">
-          <h1>Level 2</h1>
-          <p>*flavour text</p>
-            <button class="nextButton">Ready?</button>
-        </section>
-
-        <section class="thirdLevelScreen">
-          <h1>Level 3</h1>
-          <p>*flavour text</p>
-            <button class="nextButton">Ready?</button>
-        </section>
-
+    <section class="wordSelect">
+      <p class="currentWord">
+      </p>
+      <label class="press-label">Choose a Letter!</label>
+      <input class="selectedLetter" maxlength="1" type="text" pattern=[a-zA-Z]>
+      <section class="wrong-area"
+        <i class="wrong-letter-label">You guessed these already:</i>
+        <p class="wrong-letters"></p>
       </section>
-    </section>
+  </section>
+</section>
+<section class="reset-screen">
+  <h3 class="overText">GAME OVER!</h3>
+  <button>Play Again</button>
+</section>
+  </main>
 
-    <section class="losingScreen">
-      <h1>You Lose!</h1>
-      <p>Flavour text</p>
-        <button>Play Again?</button>
-    </section>
-
-    <section class="victoryScreen">
-      <h1>Victory!</h1>
-      <p>Flavour Text</p>
-        <button>Play Again?</button>
-    </section>
-
-
-
-</main>
-<script src="js/main.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

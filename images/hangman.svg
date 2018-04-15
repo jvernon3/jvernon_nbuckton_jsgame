@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 513">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 11px;
+      }
+    </style>
+  </defs>
+  <title>hangman</title>
+  <g id="scaffold">
+    <g>
+      <rect y="487" width="480" height="26"/>
+      <line class="cls-1" x1="457" y1="487" x2="457" y2="6"/>
+      <line class="cls-1" x1="462.5" y1="5.5" x2="220.5" y2="5.5"/>
+      <line class="cls-1" x1="220.5" y1="0.5" x2="220.5" y2="66.5"/>
+    </g>
+  </g>
+  <g id="man">
+    <circle id="head" class="cls-1 wrong0" cx="220.5" cy="118.5" r="39"/>
+    <line id="body" class="cls-1 wrong1" x1="220.5" y1="158.5" x2="220.5" y2="304.5"/>
+    <line id="leg1" class="cls-1 wrong4" x1="220.5" y1="304.5" x2="136.5" y2="438.5"/>
+    <line id="leg2" class="cls-1 wrong5" x1="220.5" y1="304.5" x2="285.5" y2="430.5"/>
+    <line id="arm1" class="cls-1 wrong2" x1="220.5" y1="173.5" x2="102.5" y2="255.5"/>
+    <line id="arm2" class="cls-1 wrong3" x1="220.5" y1="173.5" x2="314.5" y2="255.5"/>
+  </g>
+</svg>
